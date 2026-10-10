@@ -1,0 +1,17 @@
+{
+  "title": "SkyHold",
+  "description": "SkyHold — хроники тёмного мира Джандара. Смерть не освобождает. Читай лор, вступай в Discord и подавай анкету.",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "favicon.svg"
+  },
+  "openGraph": {
+    "image": "https://images.unsplash.com/photo-1514539079130-25950c84af65?w=1200&h=630&fit=crop"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

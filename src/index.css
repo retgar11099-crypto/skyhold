@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Manrope", sans-serif;
+  color: #e7e1d6;
+  background: #0d0e0d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #0d0e0d;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0d0e0d;
+}
+
+::selection {
+  color: #11110f;
+  background: #c7a15a;
+}
+
+.font-display {
+  font-family: "Cinzel", serif;
+}
+
+.hero-image {
+  background-image: url("https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbWVkaWV2YWwlMjBjYXN0bGUlMjBtb3VudGFpbnMlMjBtaXN0JTIwY2luZW1hdGljfGVufDF8fHx8MTc5MTYyMTU1N3ww&ixlib=rb-4.1.0&q=85&w=2000");
+  background-position: center 42%;
+  background-size: cover;
+  filter: saturate(0.55) contrast(1.06);
+  transform: scale(1.015);
+}
+
+.discord-image {
+  background-image: url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbWVkaWV2YWwlMjBjYXN0bGUlMjBtb3VudGFpbnMlMjBtaXN0JTIwY2luZW1hdGljfGVufDF8fHx8MTc5MTYyMTU1N3ww&ixlib=rb-4.1.0&q=80&w=1400");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.35) saturate(0.55) brightness(0.65);
+}
+
+.cta-image {
+  background-image: url("https://images.unsplash.com/photo-1685955192099-bc7a058ec777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxkYXJrJTIwbWVkaWV2YWwlMjBjYXN0bGUlMjBtb3VudGFpbnMlMjBtaXN0JTIwY2luZW1hdGljfGVufDF8fHx8MTc5MTYyMTU1N3ww&ixlib=rb-4.1.0&q=80&w=1800");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.6) saturate(0.4);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(231, 225, 214, 0.58);
+}
+
+.eyebrow {
+  color: #c7a15a;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .hero-image {
+    background-position: 62% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
