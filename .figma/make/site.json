@@ -1,6 +1,7 @@
 {
   "title": "SkyHold",
   "description": "SkyHold — хроники тёмного мира Джандара. Смерть не освобождает. Читай лор, вступай в Discord и подавай анкету.",
+  "language": "ru",
   "robots": {
     "index": true
   },
