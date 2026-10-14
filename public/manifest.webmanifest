@@ -1,0 +1,16 @@
+{
+  "name": "SkyHold",
+  "short_name": "SkyHold",
+  "description": "SkyHold — хроники тёмного мира Джандара.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d0b16",
+  "theme_color": "#0d0b16",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
