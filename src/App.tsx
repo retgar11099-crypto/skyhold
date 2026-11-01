@@ -1,3 +1,7 @@
+import NexusPhone from "./NexusPhone"
+import SkyStatus from "./SkyStatus"
+import ApplicationForm from "./ApplicationForm"
+
 const LORE_URL =
   "https://docs.google.com/document/d/1av1iPQn4NIFczoYO9sSYpUTFECD1eX_q3c673oUlcS4/edit?usp=sharing"
 const DISCORD_URL = "https://discord.gg/RJvGhBAdmc"
@@ -277,11 +281,19 @@ export default function App() {
                 выжить. Заполни её, пройди проверку и получи право рождения в
                 мире, где смерть не является освобождением.
               </p>
-              <div className="mt-8">
-                <ExternalButton href={DISCORD_URL} variant="outline">
-                  Подать анкету
-                </ExternalButton>
-              </div>
+              <ApplicationForm />
+              <p className="mt-4 text-xs leading-5 text-white/30">
+                Удобнее через Discord?{" "}
+                <a
+                  href={DISCORD_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#c7a15a] hover:text-[#ecd08e]"
+                >
+                  Подать анкету там
+                </a>
+                .
+              </p>
             </article>
           </div>
         </div>
@@ -327,6 +339,8 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <SkyStatus />
+      <NexusPhone />
     </main>
   )
 }
