@@ -1,6 +1,7 @@
 import NexusPhone from "./NexusPhone"
 import SkyStatus from "./SkyStatus"
 import ApplicationForm from "./ApplicationForm"
+import BuildersNotice from "./BuildersNotice"
 
 const LORE_URL =
   "https://docs.google.com/document/d/1av1iPQn4NIFczoYO9sSYpUTFECD1eX_q3c673oUlcS4/edit?usp=sharing"
@@ -146,6 +147,7 @@ export default function App() {
               <ExternalButton href={LORE_URL} variant="outline">
                 Читать лор
               </ExternalButton>
+              <BuildersNotice />
             </div>
           </div>
         </div>
